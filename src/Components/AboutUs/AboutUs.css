@@ -1,0 +1,152 @@
+.about-luxury-section {
+  background: radial-gradient(circle at 0% 0%, #1a4d7c, #133d64);
+  padding: 140px 0;
+  color: #f3f4f6;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-shimmer {
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.03), transparent 70%);
+}
+
+/* Badge */
+.about-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #FFB84D;
+  background: rgba(255,184,77,0.1);
+  border: 1px solid rgba(255,184,77,0.25);
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background: #FFB84D;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #FFB84D;
+}
+
+/* Heading */
+.about-heading {
+  font-size: clamp(38px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.accent-text {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.5em;
+  font-weight: 400;
+  color: #93c5fd;
+  font-style: italic;
+}
+
+/* Text */
+.about-description {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* Quote */
+.about-quote-card {
+  margin-top: 40px;
+  background: rgba(255,255,255,0.04) !important;
+  border-left: 3px solid #FFB84D !important;
+  border-radius: 0 16px 16px 0 !important;
+}
+
+.quote-icon {
+  font-size: 42px;
+  color: #FFB84D;
+  opacity: 0.4;
+
+}
+
+.about-quote-card p {
+  font-style: italic;
+  color: #e2e8f0;
+}
+
+/* Buttons */
+.btn-group-custom {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.about-btn-primary,
+.about-btn-outline {
+  letter-spacing: 1px;
+  padding: 16px 35px !important;
+  border-radius: 8px !important;
+}
+
+.about-btn-primary {
+  background: #FFB84D !important;
+  color: #133d64 !important;
+  border: none !important;
+}
+
+.about-btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(255,184,77,0.3);
+}
+
+.about-btn-outline {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+/* Video */
+.video-frame-container {
+  position: relative;
+}
+
+.about-video-card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.video-decoration-box {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  border-right: 4px solid #FFB84D;
+  border-bottom: 4px solid #FFB84D;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .about-luxury-section {
+    padding: 80px 0;
+  }
+  .about-heading,
+  .about-description {
+    text-align: center;
+  }
+  .about-badge {
+    margin: 0 auto 25px;
+  }
+  .btn-group-custom {
+    justify-content: center;
+  }
+}
